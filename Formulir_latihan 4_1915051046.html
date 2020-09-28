@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Ladang Rapelda</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />	
+	<script type="text/javascript" src="jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="Formulir_latihan 4_1915051046.css">
+</head>
+<body>
+	<div class="kotak">		
+		<h1>
+			Pendaftaran Petani Sukses<br/>			
+			RAPELDA U. MADA IBPA BR TARIGAN
+		</h1>	
+		
+		<form class="form">
+			<input type="text" id="nama" placeholder="Tuliskan nama .." name="nama" autocomplete="off">
+			<input type="text" id="alamat" placeholder="Tuliskan alamat .." name="alamat" autocomplete="off">
+			<input type="text" id="negara" placeholder="Tuliskan negara asal  .." name="negara" autocomplete="off">
+			<input type="text" id="umur" placeholder="Tuliskan umur  .." name="umur" autocomplete="off">
+			<input type="text" id="alasan" placeholder="Tuliskan alasan ingin menjadi petani sukses  .." name="alasan" autocomplete="off">
+			<input type="text" id="validasi" placeholder="Apakah anda bersedia menjadi petani sukses?" name="validasi" autocomplete="off">
+		</form>
+	</div>
+	<script type ="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#nama").keyup(function(){
+				$("#alamat").slideDown();
+			});
+ 
+			$("#alamat").keyup(function(){
+				$("#negara").slideDown();
+			}) ;
+			$("#negara").keyup(function(){
+				$("#umur").slideDown();
+			});
+			$("#umur").keyup(function(){
+				$("#alasan").slideDown();
+			});
+			$("#alasan").keyup(function(){
+				$("#validasi").fadeIn();
+			});
+		});
+	</script>
+</body>
+</html>

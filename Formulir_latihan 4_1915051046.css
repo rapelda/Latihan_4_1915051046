@@ -1,0 +1,31 @@
+body{
+	font-family: sans-serif;
+	background: url(pohon.jpg) no-repeat center center fixed; 
+}
+ 
+h1{
+	text-align: center;	
+	color: #000000;
+	font-size: 19pt;
+	margin-bottom: 60px;
+}
+ 
+.kotak{
+	padding: 40px 40px 70px 40px;
+	height: 600px;
+	width: 700px;
+	margin: 20px auto;
+	background: url(pohon.jpg) no-repeat center center fixed; 
+}
+ 
+input[type="text"]{
+	width: 99%;
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 20px;
+	font-size: 13pt;
+}
+ 
+#alamat,#negara ,#umur,#alasan,#validasi{
+	display: none;
+}
